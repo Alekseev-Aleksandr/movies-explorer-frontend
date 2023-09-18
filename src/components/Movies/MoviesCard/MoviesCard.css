@@ -1,0 +1,61 @@
+.card__img {
+    width: 270px;
+    height: 151px;
+    display: block;
+}
+
+.card__name {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 13px 0 30px;
+    align-items: center;
+}
+
+.card__time {
+    color: #A0A0A0;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.card__like {
+    background-image: url('../../../images/icon__COLOR_invisible.svg');
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+
+
+.card__like_active {
+    transition: .4s;
+    background-image: url('../../../images/icon__COLOR_main-3.svg');
+}
+
+@media screen and (max-width:1279px) {
+    .card__img {
+        width: 339px;
+        height: 168px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card__img {
+        width: 300px;
+    }
+
+    .card__wrapper{
+        padding-bottom: 24px;
+    }
+}
