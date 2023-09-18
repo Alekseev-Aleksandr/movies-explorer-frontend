@@ -6,10 +6,9 @@ import Register from "../auth/Register/Register";
 import Profile from "../Profile/Profile";
 
 import { useState, useEffect } from "react";
-import { Route, Routes, useNavigate, Switch, useLocation } from 'react-router-dom'
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom'
 import PageNotFound from "../PageNotFound/PageNotFound";
 import { Paths } from "../../utils/utils";
-import SavedMovies from "../Movies/SavedMovies/SavedMovies";
 import Movies from "../Movies/Movies";
 
 import { movies } from "../../utils/utils.js"

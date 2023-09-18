@@ -1,4 +1,3 @@
-import img from '../images/films/pic__COLOR_pic-1.png'
 export const Paths = [
     '/',
     '/movies',
