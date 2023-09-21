@@ -2,7 +2,7 @@ import arrow from '../../../images/text__COLOR_font-main.svg'
 
 export default function Portfolio() {
     return (
-        <section className='portfolio'>
+        <section className='portfolio' aria-label='портфолио'>
             <span className='portfolio__title'>Портфолио</span>
             <ul className='portfolio__links'>
                 <li>

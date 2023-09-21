@@ -18,7 +18,8 @@ export default function MoviesCard({ card, onCardLike }) {
 
                 <button className={
                     isLiked ? "card__like card__like_active" : "card__like"}
-                    onClick={handleLikeBtn} />
+                    onClick={handleLikeBtn}
+                    type="button" />
             </div>
             <span className="card__time">{`${Math.floor(card.time / 60 / 60)}ч ${Math.floor(card.time % 60)}м `}</span>
         </div>

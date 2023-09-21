@@ -16,7 +16,7 @@ export default function Navigation({ onLogin, color, burgerMenu }) {
             <NavMovies color={color} burgerMenu={burgerMenu} />
             <div className={`toggle ${!color ? 'toggle_type_white' : ''}`}>
                 <NavLink to='/profile'
-                    className='profile__link'>
+                    className='toggle__profile-link'>
                     <span className='toggle__name'>Аккаунт</span>
                     <div className={`toggle__circle ${!color ? 'toggle__circle_type_white' : ''}`}>
                         <img className='toggle__img'

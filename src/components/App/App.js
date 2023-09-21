@@ -27,8 +27,8 @@ function App() {
   let location = useLocation()
   const navigate = useNavigate();
   function handleResize() {
-    if (window.outerWidth < 768) 
-    setBurgerMenu(true)
+    if (window.outerWidth < 1279)
+      setBurgerMenu(true)
     else setBurgerMenu(false)
   }
 
@@ -71,8 +71,8 @@ function App() {
   }
 
   function logOut() {
-    console.log('join');
     setLoggedIn(false)
+    navigate('/')
   }
 
   function onLogin(userData) {

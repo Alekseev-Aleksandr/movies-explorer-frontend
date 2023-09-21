@@ -1,6 +1,5 @@
 import { useContext, useState } from "react"
 import { UserInfoContext } from "../../context/CurrentUserContext";
-import { NavLink } from "react-router-dom";
 
 export default function Profile({ onUpdateUser, logOut, editUser }) {
     const user = useContext(UserInfoContext)
@@ -37,7 +36,7 @@ export default function Profile({ onUpdateUser, logOut, editUser }) {
     }
     return (
         <div className="profile">
-            <h2 className="profile__title">Привет, {user.name}!</h2>
+            <h1 className="profile__title">Привет, {user.name}!</h1>
 
             <form className="profile__form" onSubmit={onSubmit}>
 
@@ -77,17 +76,18 @@ export default function Profile({ onUpdateUser, logOut, editUser }) {
                             type="submit">Cохранить</button> :
                         <>
                             <button className="profile__btn"
-                                onClick={handleEditBtn}>
+                                onClick={handleEditBtn}
+                                type="button">
                                 Реадктировать</button>
 
-                            <NavLink style={{ textAlign: 'center' }} to='/'>
+                            {/* <NavLink style={{ textAlign: 'center' }} to='/'> */}
                                 <button className="profile__btn profile__btn_type_exit"
                                     type='submit'
                                     onClick={logOut}
                                 >
                                     Выйти из аккаунта
                                 </button>
-                            </NavLink>
+                            {/* </NavLink> */}
                         </>
                 }
             </form >

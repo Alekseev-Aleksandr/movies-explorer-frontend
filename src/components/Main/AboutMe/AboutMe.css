@@ -1,5 +1,5 @@
 .student {
-    padding: 110px 70px 125px 70px;
+    padding: 110px 70px 0px 70px;
 }
 
 .student__wrapper {
@@ -35,7 +35,7 @@
     max-width: 600px;
 }
 
-.sudent__link {
+.student__link {
     text-decoration: none;
     color: #000;
     display: block;
@@ -43,7 +43,7 @@
     align-self: end;
 }
 
-.sudent__link:hover {
+.student__link:hover {
     opacity: .7;
     transition: .4s;
 }
@@ -81,15 +81,22 @@
 
     .student__name {
         font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -1.6px;
     }
 
     .student__description {
         margin-top: 20px;
         font-size: 12px;
-        max-width: 364px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 340px;
     }
 
-    .sudent__link {
+    .student__link {
         font-size: 14px;
     }
 
@@ -104,9 +111,9 @@
     }
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:767px) {
     .student {
-        padding: 70px 14px;
+        padding: 22px 14px;
     }
 
     .student__wrapper {
@@ -117,6 +124,7 @@
         column-gap: 0px;
         margin: 0 auto;
         justify-content: center;
+        padding-top: 60px;
     }
 
     .student__photo {
@@ -125,40 +133,42 @@
         min-height: 352px;
         grid-template-columns: 292px;
     }
+
     .student__about {
         margin-top: 20px;
         font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
     }
 
     .student__name {
+        margin-top: 10px;
         font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -1.2px;
     }
 
     .student__description {
         font-size: 11px;
-        max-width: 292px;
-        line-height: 16px
+        max-width: 275px;
+        line-height: 16px;
+        margin-top: 23px;
     }
-    .sudent__link {
+
+    .student__link {
         margin-top: 40px;
     }
-}
 
-@media screen and (max-width:767px) {
-    .student__title{
+    .student__title {
         font-size: 18px;
         margin-bottom: 29px;
     }
-    .student__wrapper{
-        padding-top: 60px;
-    }
-    .student__info{
+
+    .student__info {
         margin-top: 30px;
     }
-    .student__about{
-        margin-top: 5px;
-    }
-    .student__description{
-        margin-top: 19px;
-    }
+
 }

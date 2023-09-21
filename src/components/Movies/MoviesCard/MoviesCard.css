@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #E8E8E8;
-    padding: 13px 0 30px;
+    padding: 13px 0 22px;
     align-items: center;
 }
 
@@ -46,13 +46,14 @@
 @media screen and (max-width:1279px) {
     .card__img {
         width: 339px;
-        height: 168px
+        height: 190px
     }
 }
 
 @media screen and (max-width:767px) {
     .card__img {
         width: 300px;
+        height: 168px
     }
 
     .card__wrapper{

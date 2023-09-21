@@ -6,7 +6,7 @@ export default function SearchForm() {
             <div className="movies__searcn">
                 <input className="movies__search-input"
                     placeholder="Фильм" />
-                <button className="movies__search-btn">Найти</button>
+                <button className="movies__search-btn" type="button">Найти</button>
             </div>
             <FilterCheckbox />
         </form>

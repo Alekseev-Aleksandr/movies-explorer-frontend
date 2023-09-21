@@ -1,14 +1,14 @@
-.auth {}
-
-.auth__wrapper {
+.auth {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 53px;
 }
 
+.auth__wrapper {}
+
 .auth__title {
-    margin: 40px 0;
+    margin: 20px 0;
     font-size: 24px;
     font-weight: 500;
 }
@@ -40,11 +40,11 @@
 }
 
 .auth__input-wrapper {
-    margin-top: 24px;
+    margin-top: 6px;
 }
 
 .auth__input-wrapper:first-of-type {
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 .auth__input-wrapper:last-child {
@@ -62,12 +62,17 @@
 }
 
 .auth__btn {
-    margin-top: 180px;
+    margin-top: 140px;
     padding: 13px 0;
     background-color: #3456F3;
     border: none;
     color: #fff;
     border-radius: 3px;
+}
+
+.auth__btn:hover {
+    opacity: 0.8;
+    transition: .4s;
 }
 
 .auth__btn:disabled {
@@ -88,7 +93,10 @@
     color: #3456F3;
     display: inline;
 }
-
+.auth__link:hover{
+    opacity: 0.8;
+    transition: .4s;
+}
 .auth__error-message {
     min-height: 12px;
     color: #FF3055;
@@ -110,38 +118,48 @@
     display: block;
 }
 
+@media screen and (max-width:1279px) {
+    .auth {
+        padding-top: 214px;
+    }
+}
 
 @media screen and (max-width:767px) {
-    .auth__wrapper{
+    .auth {
         padding-top: 40px;
     }
-    .auth__title{
+
+    .auth__title {
         min-width: 260px;
         text-align: center;
-
     }
 
-    .auth {
+    .auth__wrapper {
         max-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .auth__input{
+
+    .auth__input {
         min-width: 260px;
     }
-    .auth__title{
-        margin: 30px 0 82px 0;
+
+    .auth__title {
+        margin: 30px 0 62px 0;
     }
-    .auth__input-wrapper{
+
+    .auth__input-wrapper {
         margin-top: 8px;
     }
-    .auth__btn{
-        margin-top: 222px;
+
+    .auth__btn {
+        margin-top: 289px;
         font-size: 12px;
         padding: 15px 0;
     }
-    .auth__link-description{
+
+    .auth__link-description {
         font-size: 12px;
     }
 

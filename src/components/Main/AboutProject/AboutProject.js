@@ -7,7 +7,7 @@ export default function AboutProject() {
             <div className="about-project__wrapper">
                 <div>
                     <h3 className="about-project__subtitle">Дипломный проект включал 5 этапов</h3>
-                    <p className="about-project__description">Составление плана, работу над бэкендом, вёрстку, добавление функциональности и финальные доработки.</p>
+                    <p className="about-project__description">Составление плана, работу над бэкендом, вёрстку, добавление функциональности&nbsp;и&nbsp;финальные доработки.</p>
                 </div>
                 <div>
                     <h3 className="about-project__subtitle">На выполнение диплома ушло 5 недель</h3>

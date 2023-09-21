@@ -22,21 +22,29 @@
 }
 
 .schema__subtitle {
-    margin-top: 14px;
+    margin-top: 18px;
     color: #A0A0A0;
 }
 
 @media screen and (max-width:1279px) {
     .schema {
-        margin: 93px 50px 121px;
-        padding: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0 34px;
+        margin: 96px 18px 90px 18px;
+        grid-template-columns: 1fr 4fr;
     }
+
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:767px) {
     .schema {
+        padding: 0;
+        margin: 10px;
         font-size: 11px;
-        margin: 0px 18px 93px 18px;
+        margin: 3px 18px 93px 18px;
         grid-template-columns: 1fr 1.84fr;
     }
 
@@ -44,6 +52,8 @@
         white-space: nowrap;
         background-color: #F2F2F2;
         padding: 10px 5px;
-
+    }
+    .schema__subtitle{
+        margin-top: 12px;
     }
 }

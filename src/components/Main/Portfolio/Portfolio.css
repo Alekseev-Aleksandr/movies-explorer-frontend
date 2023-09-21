@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 100px 70px 125px 70px;
+    padding: 100px 70px 103px 70px;
 }
 
 .portfolio__title {
@@ -55,29 +55,27 @@
     .portfolio__link {
         font-size: 28px;
     }
+
+    .portfolio__link-img {
+        margin-right: 5px;
+    }
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:767px) {
     .portfolio {
-        padding: 0 14px 70px;
+        padding: 48px 14px 70px;
     }
 
     .portfolio__link {
         white-space: nowrap;
         font-size: 18px;
+        line-height: 28px;
+        padding: 21px 0;
     }
 
     .portfolio__title {
         font-size: 14px;
         margin-bottom: 20px;
-    }
-}
-
-
-@media screen and (max-width:767px) {
-    .portfolio__link {
-        line-height: 28px;
-        padding: 21px 0;
     }
 
     .portfolio__link-img {

@@ -20,7 +20,8 @@ export default function Header({ onLogin, color, burgerMenu, clickMenu }) {
                     ${color ?
                             'burger-menu__btn_type_white' :
                             "burger-menu__btn_type_black"}`}
-                        onClick={clickMenu}>
+                        onClick={clickMenu}
+                        type='button'>
                     </button>
                     : <Navigation onLogin={onLogin} color={color} />
                 : <Navigation onLogin={onLogin} color={color} />

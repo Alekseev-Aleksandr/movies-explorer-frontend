@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../../../images/logo.svg'
 import { useState } from 'react';
 
@@ -30,20 +30,23 @@ export default function Login({ onLogin }) {
         e.preventDefault()
         onLogin(formValue)
     }
-    
+
     return (
-        <div className='auth__wrapper' novalidate>
-            <div className='auth'>
-                <img className='logo'
-                    src={logo}
-                    alt='Логотип' />
-                <h2 className='auth__title'>Рады видеть!</h2>
+        <main className='auth' novalidate>
+            <div className='auth__wrapper'>
+                <NavLink to='/'>
+                    <img className='logo'
+                        src={logo}
+                        alt='Логотип' />
+                </NavLink>
+                <h1 className='auth__title'>Рады видеть!</h1>
 
                 <form className='auth__form' onSubmit={onSubmit}>
 
                     <div className='auth__input-wrapper'>
                         <span className='auth__input-title'>E-mail</span>
-                        <input className={`auth__input ${isValidEmail? '':'auth__input-err'}`}
+                        <input className={`auth__input ${isValidEmail ? '' : 'auth__input-err'}`}
+                            placeholder='email'
                             type='email'
                             name='email'
                             required
@@ -54,7 +57,7 @@ export default function Login({ onLogin }) {
                         />
 
                         <div className={`auth__error-message }`}>
-                            <span className={`${isValidEmail ? 'auth__error-text' : 'auth__error-text_active'}`}>Введите email</span>
+                            <span className={`auth__error-text ${isValidEmail ? '' : 'auth__error-text_active'}`}>Введите email</span>
                         </div>
 
                     </div>
@@ -62,7 +65,8 @@ export default function Login({ onLogin }) {
                     <div className='auth__input-wrapper'>
 
                         <span className='auth__input-title'>Пароль</span>
-                        <input className={`auth__input ${isValidPassword? '':'auth__input-err'}`}
+                        <input className={`auth__input ${isValidPassword ? '' : 'auth__input-err'}`}
+                            placeholder='password'
                             required
                             id="form__input-password"
                             name="password"
@@ -73,7 +77,7 @@ export default function Login({ onLogin }) {
                         />
 
                         <div className='auth__error-message'>
-                            <span className={`${isValidPassword ? 'auth__error-text' : 'auth__error-text_active'}`}>Введите пароль</span>
+                            <span className={`auth__error-text ${isValidPassword ? '' : 'auth__error-text_active'}`}>Введите пароль</span>
                         </div>
                     </div>
                     <button className='auth__btn auth__btn_type_save' disabled={getDisabledBtn() ? false : true} type='submit'>Войти</button>
@@ -88,7 +92,7 @@ export default function Login({ onLogin }) {
 
                 </form>
             </div>
-        </div>
+        </main>
 
     )
 }

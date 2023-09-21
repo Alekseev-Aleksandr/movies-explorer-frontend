@@ -7,13 +7,13 @@ import NavTab from "./NavTab/NavTab";
 
 export default function Main(props) {
     return (
-        <section className="main">
+        <main className="main" aria-label="Главная секция">
             <Promo />
             <AboutProject />
             <NavTab />
             <Techs />
             <AboutMe />
             <Portfolio />
-        </section>
+        </main>
     )
 }
