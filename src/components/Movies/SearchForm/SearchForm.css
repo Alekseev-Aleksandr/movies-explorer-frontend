@@ -1,0 +1,75 @@
+.movies__search-input {
+    font-size: 28px;
+    border: none;
+    padding: 0;
+    width: 93%;
+}
+
+.movies__search-input:focus {
+    outline: none;
+    border: none;
+    background-color: #F9F9F9;
+    border-radius: 48px;
+    padding-left: 10px;
+}
+
+.movies__searcn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: solid 1px #E8E8E8;
+}
+
+.movies__searcn-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 32px 0;
+}
+
+.movies__search-btn {
+    background-color: #3456F3;
+    border-radius: 48px;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+}
+
+.movies__search-btn:hover {
+    opacity: .8;
+    transition: .4s;
+}
+
+@media screen and (max-width:1279px) {
+    .movies__searcn-wrapper {
+        margin: 77px 0 61px 0;
+        flex-direction: column;
+    }
+
+    .movies__search-btn {
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 8px 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .movies__searcn {
+        padding-bottom: 8px;
+    }
+
+    .movies__search-input {
+        padding-left: 4px;
+        max-width: 220px;
+        font-size: 18px;
+    }
+
+    .movies__search-btn {
+        margin-right: 6px;
+        padding: 8px 13px;
+        font-size: 11px;
+        line-height: 18px;
+    }
+}
